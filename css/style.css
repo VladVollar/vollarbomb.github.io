@@ -1,0 +1,517 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900");
+body {
+  background: #8FA6B4;
+  font-family: "Montserrat", sans-serif;
+}
+
+.button-parent {
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+.button-parent--inner {
+  padding: 4em 1em;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  color: #4A4A4A;
+  display: inline-block;
+}
+
+.button-item {
+  padding-bottom: 2em;
+}
+
+.btn-1 {
+  padding: 1em 3em;
+  border: 3px solid #4A90E2;
+  transition: all 300ms ease;
+  box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.2);
+}
+.btn-1:before {
+  position: absolute;
+  content: '';
+  width: 0%;
+  height: 100%;
+  background: #4A90E2;
+  top: 0;
+  left: 50%;
+  z-index: -1;
+  transition: all 0ms ease;
+}
+.btn-1:hover {
+  color: white;
+  box-shadow: none;
+}
+.btn-1:hover:before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: #4A90E2;
+  top: 0;
+  left: 0%;
+  z-index: -1;
+  transition: all 300ms ease;
+}
+
+.btn-2 {
+  padding: 1em 3em;
+  border: 3px solid linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+  transition: all 300ms ease;
+  box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.2);
+}
+.btn-2:before {
+  position: absolute;
+  content: '';
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+  top: 0;
+  left: auto;
+  right: 0;
+  z-index: -1;
+  transition: all 300ms ease;
+}
+.btn-2:hover {
+  color: white;
+  box-shadow: none;
+}
+.btn-2:hover:before {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #3F2B96 0%, #A8C0FF 100%);
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.btn-3 {
+  padding: 1em 3em;
+  border: 3px solid #4A90E2;
+  transition: all 300ms ease;
+  box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.2);
+}
+.btn-3 span {
+  position: relative;
+  padding: 0em 0.2em;
+}
+.btn-3 span:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: auto;
+  right: 0;
+  height: 50%;
+  width: 0%;
+  background: #4A90E2;
+  z-index: -1;
+  transition: all 300ms ease;
+}
+.btn-3:hover {
+  color: white;
+  box-shadow: none;
+}
+.btn-3:hover span:before {
+  content: '';
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
+.btn-4 {
+  padding: 1em 3em;
+  border: 3px solid #4A90E2;
+  transition: all 300ms ease;
+  box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.2);
+}
+.btn-4 span {
+  position: relative;
+  padding: 0em 0.2em;
+}
+.btn-4 span:before {
+  content: '';
+  position: absolute;
+  bottom: auto;
+  top: 0;
+  height: 0%;
+  width: 100%;
+  background: #4A90E2;
+  z-index: -1;
+  transition: all 300ms ease;
+}
+.btn-4:hover {
+  color: white;
+  box-shadow: none;
+}
+.btn-4:hover span:before {
+  content: '';
+  height: 100%;
+  bottom: 0;
+  top: auto;
+}
+
+.btn-5 {
+  padding: 1em 3em;
+  border: 3px solid #4A90E2;
+  transition: all 300ms ease;
+  box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.2);
+}
+.btn-5:before {
+  content: '';
+  width: 0%;
+  height: 2px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  background: #4A90E2;
+  transition: all 0ms ease;
+}
+.btn-5:after {
+  content: '';
+  width: 80%;
+  height: 0px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  background: #4A90E2;
+  transition: all 0ms ease;
+  z-index: -1;
+}
+.btn-5:hover {
+  color: white;
+  box-shadow: none;
+}
+.btn-5:hover:before {
+  content: '';
+  width: 80%;
+  height: 2px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  background: #4A90E2;
+  transition: all 300ms ease;
+}
+.btn-5:hover:after {
+  content: '';
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  transition: all 300ms ease;
+  transition-delay: 350ms;
+}
+
+.btn-6 {
+  padding: 1em 3em;
+  border: 3px solid #4A90E2;
+  transition: all 300ms ease;
+  box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.2);
+}
+.btn-6:before {
+  content: '';
+  height: 0%;
+  width: 2px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  background: #4A90E2;
+  transition: all 0ms ease;
+}
+.btn-6:after {
+  content: '';
+  height: 80%;
+  width: 0px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  background: #4A90E2;
+  transition: all 0ms ease;
+  z-index: -1;
+}
+.btn-6:hover {
+  color: white;
+  box-shadow: none;
+}
+.btn-6:hover:before {
+  content: '';
+  height: 80%;
+  width: 2px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  background: #4A90E2;
+  transition: all 300ms ease;
+}
+.btn-6:hover:after {
+  content: '';
+  height: 80%;
+  width: 80%;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  transition: all 300ms ease;
+  transition-delay: 350ms;
+}
+
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+.waveWrapper {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    bottom: -1px;
+    background-image: linear-gradient(to top, #86377b 20%, #27273c 80%);
+}
+.bgTop {
+    z-index: 15;
+    opacity: 0.5;
+}
+.bgMiddle {
+    z-index: 10;
+    opacity: 0.75;
+}
+.bgBottom {
+    z-index: 5;
+}
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+.waveTop {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+   -webkit-animation: move-wave 3s;
+   -webkit-animation-delay: 1s;
+   animation-delay: 1s;
+}
+.waveMiddle {
+    background-size: 50% 120px;
+}
+.waveAnimation .waveMiddle {
+    animation: move_wave 10s linear infinite;
+}
+.waveBottom {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveBottom {
+    animation: move_wave 15s linear infinite;
+}
+
+.preloader {
+  /*фиксированное позиционирование*/
+  position: fixed;
+  /* координаты положения */
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* фоновый цвет элемента */
+  background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+  /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+  z-index: 1001;
+}
+
+.preloader__row {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
+  animation: preloader-rotate 2s infinite linear;
+}
+
+.preloader__item {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  background-color: #5a00ff;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  animation: preloader-bounce 2s infinite ease-in-out;
+}
+
+.preloader__item:last-child {
+  top: auto;
+  bottom: 0;
+  animation-delay: -1s;
+}
+
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes preloader-bounce {
+
+  0%,
+  100% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1);
+  }
+}
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
+
+
+/* Style the header with a grey background and some padding */
+.header {
+  overflow: hidden;
+  background: linear-gradient(90deg, #efd5ff 0%, #515ada 100%);
+  padding: 20px 10px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: #FFFFFF;
+  color: black;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: #CCCCFF;
+  color: white;
+}
+
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+
+
+
+
+/* СКРОЛ ДЛЯ СТРАНИЦЫ */
+::-webkit-scrollbar-button {
+background-image:url('');
+background-repeat:no-repeat;
+width:5px;
+height:0px
+}
+
+::-webkit-scrollbar-track {
+background-color:#ecedee
+}
+
+::-webkit-scrollbar-thumb {
+-webkit-border-radius: 0px;
+border-radius: 0px;
+background-color:#5a00ff;
+}
+
+::-webkit-scrollbar-thumb:hover{
+background-color:#5a00ff;
+}
+
+::-webkit-resizer{
+background-image:url('');
+background-repeat:no-repeat;
+width:4px;
+height:0px
+}
+
+::-webkit-scrollbar{
+width: 4px;
+}
+
+
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+ background: #111;
+ font-family: "Open Sans",  Impact;
+}
+
+.area {
+  text-align: center;
+  font-size: 6.5em;
+  color: #fff;
+  letter-spacing: -7px;
+  font-weight: 700;
+  text-transform: uppercase;
+  animation: blur .75s ease-out infinite;
+  text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+}
